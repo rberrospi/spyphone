@@ -360,65 +360,6 @@ app.controller('MyController', function ($scope,$document, $anchorScroll,$window
 	/* Modal JS Ends */
 
 
-   /*Color picker Start*/
-   	 angular.element(document.getElementById('bottom')).append($compile('<div class="color-picker"><a href="#" class="handle" ><i class="fa fa-cog"></i></a><div class="settings-header"><h3>Setting panel</h3></div><div class="section"><h4 class="color">Normal color schemes:</h4><div class="colors"><a href="#" class="color-1" ></a><a href="#" class="color-2" ></a><a href="#" class="color-4" ></a><a href="#" class="color-5" ></a><a href="#" class="color-6" ></a><a href="#" class="color-7" ></a><a href="#" class="color-8" ></a></div></div></div>')($scope));
-	
-	angular.element('.color-picker').animate({left: '-239px'});
-
-   	 angular.element('.handle').bind('click', function(e) {
-		
-			e.preventDefault();
-	    $scope.var=angular.element('.color-picker');
-	    if ($scope.var.css('left') === '-239px') {
-	    	
-	       angular.element('.color-picker').animate({left: '0px'}); 
-	    } 
-	    else {
-	    	
-	        angular.element('.color-picker').animate({left: '-239px'});
-	    }
-		});  
-	
-	angular.element('.color-1').bind('click', function() {
-   		
-	    angular.element('#color').attr("href", "assets/css/color/color-1.css"/*tpa=http://appestia-angular.phoenixcoded.com/creative/assets/controllers/assets/css/color/color-1.css*/ );
-	    return false;
-	});
-	angular.element('.color-2').bind('click', function() {
-		
-	    angular.element('#color').attr("href", "assets/css/color/color-2.css"/*tpa=http://appestia-angular.phoenixcoded.com/creative/assets/controllers/assets/css/color/color-2.css*/ );   
-	    return false;
-	});        
-	angular.element('.color-4').bind('click', function() {
-		
-	   angular.element('#color').attr("href", "assets/css/color/color-4.css"/*tpa=http://appestia-angular.phoenixcoded.com/creative/assets/controllers/assets/css/color/color-4.css*/ );
-	    return false;
-	});
-	angular.element('.color-5').bind('click', function() {
-		
-	    angular.element('#color').attr("href", "assets/css/color/color-5.css"/*tpa=http://appestia-angular.phoenixcoded.com/creative/assets/controllers/assets/css/color/color-5.css*/ );
-	    return false;
-	});
-	angular.element('.color-6').bind('click', function() {
-		
-	    angular.element('#color').attr("href", "assets/css/color/color-6.css"/*tpa=http://appestia-angular.phoenixcoded.com/creative/assets/controllers/assets/css/color/color-6.css*/ );
-	    return false;
-	});
-	angular.element('.color-7').bind('click', function() {
-		
-	    angular.element('#color').attr("href", "assets/css/color/color-7.css"/*tpa=http://appestia-angular.phoenixcoded.com/creative/assets/controllers/assets/css/color/color-7.css*/ );
-	    return false;
-	});
-	angular.element('.color-8').bind('click', function() {
-
-	    angular.element('#color').attr("href", "assets/css/color/color-8.css"/*tpa=http://appestia-angular.phoenixcoded.com/creative/assets/controllers/assets/css/color/color-8.css*/ );
-	    return false;
-	});
-
-   /*Color Picker end*/
-
-   
-
   /*Backstretch slider start*/
   $scope.images = [
     'assets/images/banner/slide_1.jpg'/*tpa=http://appestia-angular.phoenixcoded.com/creative/assets/controllers/assets/images/banner/slide_1.jpg*/,
