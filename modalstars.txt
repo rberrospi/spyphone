@@ -1,0 +1,92 @@
+<!--Modals Start-->
+<div class="modal fade" id="signin-page">
+    <div class="modal-dialog">
+        <div>
+            <button type="button" id="btn-close-modal" data-dismiss="modal">
+                <i class="fa fa-times icon-color"></i>
+            </button>
+            <div class="modal-center">
+                <div class="tab-content">
+                    <!-- Sign in form -->
+                    <form class="modal-background form-material tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+                        <div class="modal-heading">
+                            <h2 class="icon-color">Login</h2>
+                        </div>
+                        <div class="form-group mt20">
+                            <input type="text" class="form-control" required="" data-ng-model="lUname" id="txtuname">
+                            <span class="form-bar"></span>
+                            <label class="float-label" for="txtuname">Enter User-name</label>
+                        </div>
+                        <div class="form-group mt20">
+                            <input type="password" class="form-control" required="" data-ng-model="lPsw" id="txtpassword">
+                            <span class="form-bar"></span>
+                            <label class="float-label" for="txtpassword">Enter Password</label>
+                        </div>
+                        <div class="form-group text-right">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <div class="clearfix">
+
+                            <div class="col-md-12 col-xs-12 login-modal-btn colored-button button btn btn-primary common-btn float-button-light mob-login-modal-btn mb20">
+                                <h3 class="text-center">LOGIN NOW</h3>
+                            </div>
+                        </div>
+                        <!-- Switching forms (Fake nav tab) -->
+                        <div class="row mr0 ml0">
+                            <div class="form-switch pull-right">Do you wish to register for a <a href="#form-1"> New account? </a></div>
+                        </div>
+                    </form>
+                    <!-- Sign up form -->
+                    <form class="modal-background form-material tab-pane transition scale fade" id="signup-form">
+                        <div class="modal-heading">
+                            <h2 class="icon-color">Sign Up</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mt20">
+                                    <input type="text" class="form-control" required="" data-ng-model="SUname" id="txtname">
+                                    <span class="form-bar"></span>
+                                    <label class="float-label" for="txtname">Enter User-Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mt20">
+                                    <input type="text" class="form-control" required="" data-ng-model="SEmail" id="txtemail">
+                                    <span class="form-bar"></span>
+                                    <label class="float-label" for="txtemail">Enter E-mail_ID</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group sign-pw">
+                            <input type="password" class="form-control" required="" data-ng-model="SPsw" id="txtpass">
+                            <span class="form-bar"></span>
+                            <label class="float-label" for="txtpass">Enter Password</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" required="" data-ng-model="SCPsw" id="txtconfirmpass">
+                            <span class="form-bar"></span>
+                            <label class="float-label" for="txtconfirmpass">Confirm Password</label>
+                        </div>
+                        <div class="clearfix">
+
+                            <div class="col-md-12 col-xs-12 login-modal-btn colored-button button btn btn-primary common-btn float-button-light mob-login-modal-btn mb20">
+                                <h3 class="text-center">CREATE ACCOUNT</h3>
+                            </div>
+                        </div>
+                        <!-- Switching forms (Fake nav tab) -->
+                        <div class="row mr0 ml0">
+                            <div class="form-switch pull-right">Already have an account? <a href="#form-2" >Sign in</a></div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Hidden real nav tabs -->
+                <ul class="nav-tabs hidden">
+                    <li id="form-1"><a data-ng-click="OpenForm1()" href="#signup-form" data-toggle="tab">Sign up</a></li>
+                    <li id="form-2"><a data-ng-click="OpenForm2()" href="#signin-form" data-toggle="tab">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modals Ends-->

@@ -1,0 +1,183 @@
+<!--Sidebar-->
+<div class="sidebars " >
+    <div class="sidebar right offcanvas-nav " id="myDIV" style="right:-370px;">
+        <div class="sidebar-head nav-head" >
+            <div class="pt20">
+                <a id="logo-container" href="index-video.html" class="brand-logo">
+
+                    <img class="img img-responsive sidebar-logo" src="assets/images/logo.png" alt="appestia logo">
+
+                </a>
+                <div>
+                                <span class="sidebar-btn sidebar-close-btn fa-bar-show" data-action="toggle" data-side="right" data-ng-click="ShowHide()">
+                                    <i class="fa fa-times"></i>
+                                </span>
+                </div>
+            </div>
+            <div class="sidebar-search">
+                <form class="form-material">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="txtsearch" required="">
+                        <span class="form-bar"></span>
+                        <label class="float-label" for="txtsearch">Search</label>
+                        <i class="fa fa-search search-icon"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="cd-stretchy-nav add-content {{newClass}}"  >
+                <div class="{{LoginClass}}">
+                    <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="nav-link sidebar-login" data-ng-click="openLoginModel()" >Login</a>
+                    <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="text-smaller text-warning sidebar-signup" data-ng-click="openSignUpModel()">Signup</a>
+                </div>
+                <a class="cd-nav-trigger "  data-ng-click="ShowSocialBtn()" href="#">
+                    <span aria-hidden="true" ></span>
+                </a>
+
+                <ul class="{{className}}">
+
+                    <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twt"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="skype"><a href="#"><i class="fa fa-skype"></i></a></li>
+                    <li class="l_in"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+
+                <span aria-hidden="true" class="stretchy-nav-bg"></span>
+
+            </div>
+        </div>
+        <div id="side-scroll" class="nav-body sidebar-body" >
+
+            <div class="overflow" data-scrollable>
+                <div class="row sidebar-download-btn" >
+                    <div class="col-md-6 col-sm-6 side-app">
+                        <a class="btn btn-primary common-btn colored-button float-button-light" data-angular-ripple>
+                            <i class="fa fa-cloud-download mr5"></i> con ROOT ANDROID </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <a class="btn btn-primary common-btn colored-button float-button-light" data-angular-ripple>
+                            <i class="fa fa-cloud-download mr5"></i> sin Root ANDROID </a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div data-uib-accordion  data-close-others="oneAtATime">
+                        <div data-uib-accordion-group class="panel-default" data-is-open="status.isFirstClose3">
+                            <div data-uib-accordion-heading>
+                                <i class="fa fa-caret-right"></i>
+                                Lorem Message
+                                <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-up': status.isFirstClose3, 'glyphicon-chevron-down': !status.isFirstClose3}"></i>
+                            </div>
+                            <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                        </div>
+
+                        <div data-uib-accordion-group class="panel-default" data-is-open="status.isFirstClose4">
+                            <div data-uib-accordion-heading>
+                                <i class="fa fa-caret-right"></i>
+                                Lorem Message
+                                <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-up': status.isFirstClose4, 'glyphicon-chevron-down': !status.isFirstClose4}"></i>
+                            </div>
+                            <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <form name="outerForm" class="tab-form-demo sidebar-body-white">
+                        <div data-uib-tabset data-active="activeForm" data-justified="true">
+                            <div data-uib-tab data-index="0" data-heading="Flicker">
+                                <div id="flicker" class="in active">
+                                    <div class="col-md-12 no-padding feature-right-gallery sidebar-body-white">
+                                        <div class="row">
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-1.jpg" alt="person1">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-2.jpg" alt="person2">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-3.jpg" alt="person3">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-2.jpg" alt="person4">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-1.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-2.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-4.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-3.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                                <a class="example-image-link" href="#" data-lightbox="example-set">
+                                                    <img src="assets/images/team-4.jpg" alt="Chania">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-uib-tab data-index="1" data-heading="Blog">
+                                <div id="blog" class="sidebar-body-white">
+                                    <div class="sidebar-blog col-sm-12">
+                                        <div class="col-sm-3 example-image-link">
+                                            <img src="assets/images/team-4.jpg" alt="Chania">
+                                        </div>
+                                        <div class="col-sm-9 text-left">
+                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                            <i class="fa fa-clock-o icon-color mr5"></i>
+                                            <span class="icon-color">Saturday, April 01:13 </span>
+                                            <i class="fa fa-reply pull-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-blog col-sm-12">
+                                        <div class="col-sm-3 example-image-link">
+                                            <img src="assets/images/team-2.jpg" alt="Chania">
+                                        </div>
+                                        <div class="col-sm-9 text-left">
+                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                            <i class="fa fa-clock-o icon-color mr5"></i>
+                                            <span class="icon-color">Monday, May 02:03 </span>
+                                            <i class="fa fa-reply pull-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-blog col-sm-12">
+                                        <div class="col-sm-3 example-image-link">
+                                            <img src="assets/images/team-1.jpg" alt="Chania">
+                                        </div>
+                                        <div class="col-sm-9 text-left">
+                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                            <i class="fa fa-clock-o icon-color mr5"></i>
+                                            <span class="icon-color">Thursday, May 03:30 </span>
+                                            <i class="fa fa-reply pull-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End of sidebar-->

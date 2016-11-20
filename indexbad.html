@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Error de Envio</title>
+
+<script language="JavaScript">
+ 
+    /* Determinamos el tiempo total en segundos */
+    var totalTiempo=30;
+    /* Determinamos la url donde redireccionar */
+    var url="http://www.spyphonestore.com/index.html";
+ 
+    function updateReloj()
+    {
+        document.getElementById('CuentaAtras').innerHTML = "Redireccionando en "+totalTiempo+" segundos";
+ 
+        if(totalTiempo==0)
+        {
+            window.location=url;
+        }else{
+            /* Restamos un segundo al tiempo restante */
+            totalTiempo-=1;
+            /* Ejecutamos nuevamente la función al pasar 1000 milisegundos (1 segundo) */
+            setTimeout("updateReloj()",1000);
+        }
+    }
+ 
+    window.onload=updateReloj;
+ 
+    </script>
+<style type="text/css">
+<!--
+body {
+	background-color: #f36;
+}
+.style1 {
+	font-size: 24px;
+	color: #FFFFFF;
+}
+.style3 {color: #FFFFFF}
+.style5 {font-size: 20px; color: #FFFFFF; }
+-->
+</style></head>
+
+<body>
+<p class="style1">&nbsp;</p>
+<p class="style1">El Mensaje no se Envio, resuelva el re-Captcha de seguridad.</p>
+<p class="style1"><img src="https://www.google.com/recaptcha/intro/images/hero-recaptcha-demo.gif" width="616" height="164" /><br />
+  <br />
+Cuenta atras para Redireccionar<h2 class="style3" id='CuentaAtras'></h2>
+
+  <span class="style5">Si necesita conectarse URGENTE con nosotros envienos un correo a : <img src="assets/images/emailsafe.png" width="256" height="21" /> y le responderemos de inmediato. 
+  </p>
+  </span>
+  <p class="style1"><a href="tel:+5493764901393" target="_blank">Click aqui para contacto DIRECTO por Messengers<br />
+  <br /> 
+  <img src="assets/images/im-icons2.png" width="450" height="66" border="0" /></a></p>
+<p class="style5">Si desea volver atras ahora haga <a href="index.html">Click Aqui. </a></p>
+</body>
+</html>

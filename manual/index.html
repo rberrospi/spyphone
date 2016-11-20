@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Manual Instalacion Spyphone</title>
+		<link rel="stylesheet" href="js/help.css">
+        <script type="text/javascript" async="" src="js/owa.tracker-combined-min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var action = getParameterByName("action");
+				if(action=="activation"){$("#activation").show();}else if(action=="deactivation"){$("#deactivation").show();}
+            });
+
+            function getParameterByName(name){
+                var url     = document.URL,
+                    count   = url.indexOf(name);
+                    sub     = url.substring(count);
+                    amper   = sub.indexOf("&"); 
+
+                if(amper == "-1"){
+                    var param = sub.split("=");
+                    return param[1];
+                }else{
+                    var param = sub.substr(0,amper).split("=");
+                    return param[1];
+                }
+
+            }
+        </script>
+        <style type="text/css">
+<!--
+.Estilo2 {color: #333333}
+.Estilo3 {color: #666666}
+-->
+        </style>
+        </head>   
+    <body> 
+        <h1>Manuales de Instalacion y Configuracion Spyphone <br>
+          <br>
+          <span class="font-22 font-20 font-20 Estilo2"><span class="font-22 font-20 font-20  Estilo3"><span class="font-22 font-20 font-20 ">(Informacion Clasificada, Mantenga Discrecion) <br>
+    </span></span></span></h1>
+        <div id="wrapper">
+          <div id="activation" style="">
+            <table width="523" class="targetPhone">
+              <tbody>
+                <tr>
+                  <td width="291" align="center"><div align="center"><a href="1.html"><img src="imagenes/wiz_android_logo.png" alt="Android" width="137"height="128" border="0"></a></div></td>
+                  <td width="218"><div align="center"><img src="imagenes/wiz_apple_logo.png" width="137" height="134"></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    <h1><span class="font-22 font-20 font-20 Estilo2"><span class="font-22 font-20 font-20  Estilo3"><span class="font-22 font-20 font-20 "><span class="Estilo2"><a href="1.html">INSTALACION, CONFIGURACION Y ACTIVACION<br>
+    <br>
+    <br>
+    </a></span></span></span></span></h1>
+</body></html>

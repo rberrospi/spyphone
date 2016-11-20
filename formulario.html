@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html data-ng-app="creativeVideo" lang="en">
+
+<head>
+    <title>Spyphone - Celular Espia</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8">
+    <meta name="description" content="Appestia App Landing Page Template by Phoenixcoded">
+    <meta name="keywords" content="appestia, Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="Phoenixcoded">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google font-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <!-- Required Framework-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Icons-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+
+    <!-- OWL.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+
+    <!-- Magnific.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.min.css">
+
+    <!-- jquery.mCustomScrollbar.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+    <!--Animate CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+
+    <!-- Style.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
+
+    <!-- Responsive.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.min.css" />
+
+    <!--angular-backtop.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/angular-backtop.min.css">
+
+    <!--color css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/color/color-1.css" id="color"/>
+    <style type="text/css">
+<!--
+.style1 {font-size: 14px}
+-->
+    </style>
+</head>
+<body data-ng-controller="MyController"  id="bottom" data-spy="scroll" data-target=".navbar" data-offset="50" >
+
+
+<!-- Contact section starts -->
+<section id="contactus">
+	<div class="container">
+		<div class="row">
+			<div class="title">
+				<h2 class="text-center">Envienos <span class="theme_bolder">un Mensaje</span></h2>
+				<div class="col-sm-12 col-md-6 col-md-offset-3 text-center">
+					<p> Envienos un Mensaje con su Consulta y nuestro Equipo le respondera a la Mayor Brevedad Posible </p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<form action="enviar.php" method="POST">
+              <div class="form animate bounceInUp">
+                <fieldset id="contact_form">
+                  <div id="result">
+					<div style="color:#00cfef; font-size: 19px; margin:10px">
+											
+					</div>					
+				  </div>
+                  <p>
+                    <input class="animate bounceIn" data-delay="500" type="text" name="nombre" id="nombre" placeholder="Nombre" required/>
+ </p>
+                  <p>                   
+                    <input class="animate bounceIn" data-delay="500" type="email" name="correo" id="correo" placeholder="Email" required/>
+                  </p>
+                  <p>
+                    <input class="animate bounceIn" data-delay="500" type="number" name="telefono" id="telefono" placeholder="Telefono" required/>
+                  </p>
+                  <p>
+                    <input class="animate bounceIn form_i" data-delay="500" type="text" name="pais" id="pais" placeholder="Pais" required/>
+                  </p>
+                  <p>
+                    <input class="animate bounceIn form_d" data-delay="500" type="text" name="provincia" id="provincia" placeholder="Provincia" required/>
+                  </p>
+                  <p>
+                    <textarea class="animate bounceIn" data-delay="500" name="consulta" id="consulta" placeholder="Mensaje" required></textarea>
+                  </p>
+                  <center><div class="captcha"><div style="margin:10px 0;" class="g-recaptcha" data-sitekey="6LfkACoTAAAAAAgd9lAvCnr_8QmtnGS03eqOQlR-"></div> </div></center>               
+                  <label><span>&nbsp;</span>
+                  <button class="btn btn-primary submit_contact common-btn colored-button float-button-light  pull-right" data-delay="1000" id="submit_btn">Submit <i class="fa fa-paper-plane ml5" aria-hidden="true" ></i></button>
+
+                  </label>                  
+                </fieldset>
+              </div>
+              </form>
+			  <script src='https://www.google.com/recaptcha/api.js'></script>
+				   <h3> Ubicacion </h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56721.18316304996!2d-55.89445990688801!3d-27.31087419626707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457955e5597cfeb%3A0x6ff7d247ff05c071!2sEncarnaci%C3%B3n%2C+Paraguay!5e0!3m2!1ses!2sar!4v1416358202823" width="500" height="300" frameborder="0" style="border:0"></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Contact section ends -->
+
+
+
+
+<!--Required JS -->
+<script src="assets/js/jquery.2.2.3.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Twiiter JS -->
+<script src="assets/js/tweetie.min.js"></script>
+
+<!-- AngularJs Scripts Start -->
+
+<!-- custom scrollbarfor sidebar-->
+<script src="assets/angularJS/jquery.mCustomScrollbar.min.js" ></script>
+
+<!--AngularJs-->
+<script src="assets/angularJS/angular.min.js"></script>
+
+<!-- angular-scroll.js -->
+<script src="assets/angularJS/angular-scroll.min.js" ></script>
+
+<!-- button effect-->
+<script src="assets/angularJS/angular-ripple.min.js" ></script>
+
+<!-- angular animation -->
+<script src="assets/angularJS/angular-animate.min.js"></script>
+
+<!-- angular-scroll-animate.js -->
+<script src="assets/angularJS/angular-scroll-animate.min.js"></script>
+
+<!-- Module -->
+<script src="assets/modules/VideoModule.js" ></script>
+
+<!-- Controller -->
+<script src="assets/controllers/controller.js" ></script>
+
+<!-- bottom to top Scrolling -->
+<script src="assets/angularJS/angular-backtop.min.js" ></script>
+
+<!-- ui-bootstrap-tpls-2.0.2.js -->
+<script src="assets/angularJS/ui-bootstrap-tpls-2.0.2.min.js" ></script>
+
+<!--angular-parallax.js-->
+<script src="assets/angularJS/angular-parallax.min.js" ></script>
+
+<!--ngCovervid.js-->
+<script type="text/javascript" src="assets/angularJS/ngCovervid.min.js"></script>
+
+<!-- AngularJs Scripts End -->
+
+
+<!--OWL Carousel JS -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!--Video Magnification JS -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+<!-- Angular-map -->
+<script src="assets/angularJS/angular-google-maps.min.js" ></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="assets/angularJS/lodash.min.js" ></script>
+
+
+
+</body>
+</html>
